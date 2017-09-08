@@ -1,6 +1,7 @@
 This is a fork of the Vector repository at https://github.com/StanleyRoboticsInc
 
-Files have been added to mount a UR 5 robot arm on top.
+Files have been added to mount a UR 5 robot arm on top. It has been tested from scratch on a clean Ubuntu Trusty install.
+Note that Kinect Drivers are not installed on this guide, for real hardware, see reference below.
 
 ### Requirements:
 
