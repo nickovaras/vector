@@ -23,7 +23,10 @@ Open a third terminal (mind sources). Now let's launch rviz to navigate our envi
 ```
 roslaunch vector_viz view_robot.launch function:=map_nav
 ```
-Open a fourth terminal. To bring up the MoveIt components, run the launch file below. With this running, you can add a Motion Planning element to RViz and control the robot arm. Use RTTConnect for planning. You can select any of the three states stored on the SRDF file and move the robot arm to those positions.
+Open a fourth terminal. To bring up the MoveIt components, run the launch file below. With this running, you can add a Motion Planning display to RViz and control the robot arm. Use RTTConnect for planning. You can select any of the three states stored on the SRDF file and move the robot arm to those positions.
 ```
 roslaunch vector_ur5 vector_ur5_planning_execution.launch sim:=true
 ```
+If you want to control the robot programatically, please see:
+
+https://github.com/nickovaras/Vector_UR5
