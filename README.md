@@ -3,7 +3,9 @@ This is a fork of the Vector repository at https://github.com/StanleyRoboticsInc
 Files have been added to mount a UR 5 robot arm on top.
 
 ### Requirements:
+
 Ubuntu Trusty 14.04
+
 ROS Indigo:   http://wiki.ros.org/indigo/Installation/Ubuntu
 
 
