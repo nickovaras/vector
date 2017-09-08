@@ -4,6 +4,63 @@ Files have been added to mount a UR 5 robot arm on top.
 
 ## Installation
 
+(If something below does not work or is missing something, refer to https://github.com/StanleyInnovation/vector_v1/wiki/Setup-Instructions
+
+### Requirements:
+Ubuntu Trusty 14.04
+ROS Indigo:   http://wiki.ros.org/indigo/Installation/Ubuntu
+
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
+
+Install additional packages:
+
+```
+sudo apt-get install ros-indigo-control-toolbox ros-indigo-moveit-full ros-indigo-costmap-2d ros-indigo-move-base ros-indigo-jsk-recognition ros-indigo-controller-manager ros-indigo-gazebo-ros* ros-indigo-hector* ros-indigo-rviz-imu-plugin ros-indigo-robot-pose-ekf ros-indigo-robot-localization ros-indigo-yocs-cmd-vel-mux ros-indigo-joint-* ros-indigo-csm ros-indigo-costmap-converter ros-indigo-teb-local-planner
+```
+
+
+Create two workspaces:
+```
+mkdir ~/ur_ws
+mkdi ~/vector_ws
+```
+
+First we take care of the UR part. Clone the ROS-Industrial repository for Universal Robots:
+
+```
+cd ~/ur_ws
+mkdir src
+cd src
+catkin_init_workspace
+git clone https://github.com/ros-industrial/universal_robot.git
+cd ..
+catkin_make
+source devel/setup.bash
+```
+
+Now, do the following ON THE SAME TERMINAL. This is important to make the workspaces overlay, i.e., when you source the second workspace, the elements of the first workspace will also be available.
+
+```
+cd ~/vector_ws
+mkdir src
+cd src
+catkin_init_workspace
+git clone https://github.com/nickovaras/vector.git
+cd ..
+catkin_make
+source devel/setup.bash
+```
+Test that the workspaces are overlaid by using the tab-autocomplete function, for example 
+```
+roslaunch ur_ga [press tab]
+```
+And it should autocomplete to roslaunch ur_gazebo
+
+This is the end of the installation procedure.
+
 
 ## Bringup
 
