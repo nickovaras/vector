@@ -4,7 +4,8 @@ Files have been added to mount a UR 5 robot arm on top.
 
 ## Installation
 
-(If something below does not work or is missing something, refer to https://github.com/StanleyInnovation/vector_v1/wiki/Setup-Instructions
+(If something below does not work or is missing something, refer to
+https://github.com/StanleyInnovation/vector_v1/wiki/Setup-Instructions)
 
 ### Requirements:
 Ubuntu Trusty 14.04
