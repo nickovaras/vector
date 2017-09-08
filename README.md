@@ -2,14 +2,17 @@ This is a fork of the Vector repository at https://github.com/StanleyRoboticsInc
 
 Files have been added to mount a UR 5 robot arm on top.
 
+### Requirements:
+Ubuntu Trusty 14.04
+ROS Indigo:   http://wiki.ros.org/indigo/Installation/Ubuntu
+
+
 ## Installation
 
 (If something below does not work or is missing something, refer to
 https://github.com/StanleyInnovation/vector_v1/wiki/Setup-Instructions)
 
-### Requirements:
-Ubuntu Trusty 14.04
-ROS Indigo:   http://wiki.ros.org/indigo/Installation/Ubuntu
+
 
 ```
 sudo apt-get update
