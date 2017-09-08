@@ -1,0 +1,9 @@
+<launch>
+
+  <arg name="debug" default="false"/>
+    
+  <!-- Launch moveit -->
+  <include file="$(find vector_ur5)/launch/move_group.launch">
+    <arg name="debug" default="$(arg debug)" />
+  </include>
+</launch>
