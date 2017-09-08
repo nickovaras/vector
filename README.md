@@ -1,4 +1,4 @@
-This is a fork of the Vector repository https://github.com/StanleyRoboticsInc
+This is a fork of the Vector repository at https://github.com/StanleyRoboticsInc
 
 Files have been added to mount a UR 5 robot arm on top.
 
