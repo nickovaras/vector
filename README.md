@@ -1,3 +1,5 @@
+# Vector Mobile Robot + UR5 Arm Gazebo Simulation
+
 This is a fork of the Vector repository at https://github.com/StanleyRoboticsInc
 
 Files have been added to mount a UR 5 robot arm on top. It has been tested from scratch on a clean Ubuntu Trusty install.
