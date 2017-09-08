@@ -19,9 +19,27 @@ sudo apt-get upgrade
 Install additional packages:
 
 ```
-sudo apt-get install ros-indigo-control-toolbox ros-indigo-moveit-full ros-indigo-costmap-2d ros-indigo-move-base ros-indigo-jsk-recognition ros-indigo-controller-manager ros-indigo-gazebo-ros* ros-indigo-hector* ros-indigo-rviz-imu-plugin ros-indigo-robot-pose-ekf ros-indigo-robot-localization ros-indigo-yocs-cmd-vel-mux ros-indigo-joint-* ros-indigo-csm ros-indigo-costmap-converter ros-indigo-teb-local-planner
+sudo apt-get install ros-indigo-control-toolbox ros-indigo-moveit-full ros-indigo-costmap-2d ros-indigo-move-base ros-indigo-jsk-recognition ros-indigo-controller-manager ros-indigo-gazebo-ros* ros-indigo-hector* ros-indigo-rviz-imu-plugin ros-indigo-robot-pose-ekf ros-indigo-robot-localization ros-indigo-yocs-cmd-vel-mux ros-indigo-joint-* ros-indigo-csm ros-indigo-costmap-converter ros-indigo-teb-local-planner ros-indigo-navigation ros-indigo-slam-gmapping
+```
+Install NLOpt:
+```
+sudo apt-get install libnlopt-dev
 ```
 
+Open up a terminal and create a new file:
+```
+sudo gedit /opt/ros/indigo/share/hector_pose_estimation/hector_pose_estimation_nodelets.xml
+```
+Paste into the empty file:
+```
+<library path="lib/libhector_pose_estimation_nodelet">
+  <class name="hector_pose_estimation/PoseEstimationNodelet" type="hector_pose_estimation::PoseEstimationNodelet" base_class_type="nodelet::Nodelet">
+  <description>
+    This nodelet initializes the pose estimation filter with a generic system model driven by IMU measurements only.
+  </description>
+  </class>
+</library>
+```
 
 Create two workspaces:
 ```
