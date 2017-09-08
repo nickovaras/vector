@@ -31,7 +31,7 @@ Install NLOpt:
 sudo apt-get install libnlopt-dev
 ```
 
-Open up a terminal and create a new file:
+Create the following file:
 ```
 sudo gedit /opt/ros/indigo/share/hector_pose_estimation/hector_pose_estimation_nodelets.xml
 ```
