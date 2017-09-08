@@ -41,10 +41,10 @@ Paste into the empty file:
 </library>
 ```
 
-Create two workspaces:
+Create two workspace directories:
 ```
 mkdir ~/ur_ws
-mkdi ~/vector_ws
+mkdir ~/vector_ws
 ```
 
 First we take care of the UR part. Clone the ROS-Industrial repository for Universal Robots:
