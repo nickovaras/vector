@@ -1,6 +1,5 @@
-# vector_v1
-V1 vector repository for the University of Texas Austin and Georgia Tech
+This is a fork of the Vector repository https://github.com/StanleyRoboticsInc
 
-Remote PC and sim does not need vector_network or vector_robot.
+Files have been added to mount a UR 5 robot arm on top.
 
-Setup Instructions: https://github.com/StanleyInnovation/vector_v1/wiki/Setup-Instructions
+Please follow the instructions on https://github.com/nickovaras/Vector_UR5/wiki/Setup-Instructions
